@@ -1,8 +1,22 @@
+/*--COMMON--*/
 .clearfix {
   content: "";
   display: table;
   clear: both;
 }
+
+.btn {
+  display: block;
+  padding: 20px 15px;
+  color: white;
+  border: 1px dashed white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*--/COMMON--*/
 
 body {
   margin: 0;
@@ -11,13 +25,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-}
-
-.btn {
-  display: block;
-  padding: 20px 15px;
-  color: white;
-  border: 1px dashed white;
 }
 
 .layout-positioner {
@@ -69,10 +76,6 @@ body {
   margin: 0 20px;
 }
 
-.main-navigation a:nth-child(2) {
-  border-bottom: 4px solid red;
-}
-
 .main-navigation a:hover {
 	background: #242424;
 }
@@ -82,7 +85,6 @@ body {
   font-size: 0;
   margin-right: 20px;
   line-height: 72px;
-
 }
 
 .login img {
@@ -99,34 +101,44 @@ body {
 .login:hover {
   background: #242424;
 }
-
-
 /*--/HEADER--*/
 
 /*--MAIN--*/
 
 .main {
-  background-image: url("../img/background-img.png");
-  padding-top: 60px;
+  background-image: url("../img/bg-main.png");
+  padding: 55px 0;
 }
 
-.other-navigation ul {
+.main h1 {
   padding: 0;
   margin: 0;
-  list-style: none;
+  margin-bottom: 30px;
 }
 
-.other-navigation li {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 14px;
+.breadcrumbs {
+  margin-bottom: 60px;
 }
+.breadcrumbs a,
+.breadcrumbs div {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.breadcrumbs .separator {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+
 
 .main b {
   display: block;
   font-size: 46px;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 74px;
 }
 
 .main b img,
@@ -138,6 +150,11 @@ body {
 
 .main b img:last-child {
   margin-right: 0;
+}
+
+.main .band {
+  margin-bottom: 67px;
+  /*border: 1px solid red;*/
 }
 
 .main .column {
